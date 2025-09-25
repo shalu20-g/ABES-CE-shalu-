@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Counter App</title>
+</head>
+<style>
+     /*a cart page of 400*400px which contains a heading at the cener counter app with logo image at left hand side and button which increases counts upto 10 by using the addition button and subtraction button  */
+        #adi{
+            background-color: lightcoral;
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            border: 2x solid black;
+            border margin: 10px;
+            border-radius: 10px;
+
+           
+    
+        }
+
+</style>
+<body>
+    <div>
+        <h1 style="text-align: center;">Counter App</h1>
+        <div id="counter-display" style="text-align: center; font-size: 24px; ">0</div>
+        <div class="buttons" style="text-align: center;">
+            <button id="subtraction" style="font-size: 18px; ">Subtract</button>
+            <button id="Addition" style="font-size: 18px; ">Add</button>
+        </div>
+    </div>
+
+    <script>
+        const counterDisplay = document.getElementById('counter-display');
+        const Additionbutton = document.getElementById('Addition');
+        const subtractionbutton = doocument.getElementById('subtraction');
+
+        let count = 0;
+        count maxcount = 10;
+        count mincount = 0;
+
+        function showdisplay() {
+            counterDisplay.innertext = count;
+        }
+        additionbutton.getElementById('click',function())
+        {
+            if(count < maxcount){
+                count++;
+                showdisplay();
+            }
+
+        }
+        subtractionbutton.getElementById('click',function())
+        {
+            if(count > mincount){
+                count--;
+                shadowdisplay();
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+    

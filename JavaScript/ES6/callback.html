@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        function sum(a,b){
+            console.log(a+b);
+        }
+        function cal(a,b,sumcallback)
+        {
+            sumcallback(a,b); // callback function
+        }
+        cal(10,20,sum); // callback function, function ko call kree ho phle function ko as a parameter pass krre hai dusre funtion me 
+    </script>
+</body>
+</html>

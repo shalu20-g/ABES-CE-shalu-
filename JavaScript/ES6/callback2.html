@@ -1,0 +1,35 @@
+ <!--callbakc problem is solved by callback hell . callback problem is nested callback 
+ sara output ek dath aaraha hai aur isse bachne ke liye hm callback hell ka use krenge that is nested call back   -->
+ 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getData(dataid ,getnextdata)
+        {
+
+            setTimeout(() => {
+                console.log("data is fetched", dataid);
+                if(getnextdata){
+                    getnextdata();
+                }
+            }, 2000);
+        }
+        getData(1,()=>{
+            getData(2,()=>{
+                getData(3 ,()=>{
+                    getData(4);
+                });
+            });
+        });
+        getData(2);
+        getData(3);
+        getData(4);
+    </script>
+</body>
+</html>
