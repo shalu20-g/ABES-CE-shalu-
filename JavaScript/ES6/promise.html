@@ -1,0 +1,37 @@
+<!-- promise is a replace of nestedd callback , promise has two state ya toh promise resolve hoga ya fir reject hoga , thoda time lgg skta hai lekin ya toh pura ho ga ya reject --agar condition true hai toh then call ho jayegaa aur gar condition false hai toh catch call ho jayegaa error throw krr dega  drawback agar 1 lakh funtion hote toh baar baar funtion create krte toh isse bachne ke liye asynawake use krte hai   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    <script>
+        const mypromise =new Promise((resolve,reject)=>{
+            const password="aditya@1203";
+            if(password.length>8)
+            {
+                resolve("password length is ok");
+            }
+            else{
+                reject("password is shorter in length");
+            }
+
+        })
+        //  console.log(mypromise);
+
+        mypromise.then((msg)=>{
+            console.log(msg);
+        })
+        mypromise.catch((err)=>{
+            console.log(err);
+        }).finally(()=>{
+            console.log("we are coders");
+        })   
+
+        
+    </script>
+</body>
+</html>
+
