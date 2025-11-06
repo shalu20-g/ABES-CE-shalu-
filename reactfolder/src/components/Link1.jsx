@@ -10,7 +10,7 @@ function Link1() {
     }
   return (
     <div> 
-
+{/* comment */}
         <nav>
             <Link to = "/">Home</Link>
             <Link to = "/about">About</Link>
